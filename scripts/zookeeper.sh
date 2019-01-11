@@ -8,5 +8,5 @@ if [ ! -d /tmp/zookeeper ]; then
 fi
 
 echo starting zookeeper...
-nohup $KAFKA_HOME/bin/zookeeper-server-start.sh /vagrant/config/zookeeper.properties 0<&- &> /tmp/zookeeper.log &
+nohup $KAFKA_HOME/bin/zookeeper-server-start.sh /vagrant/config/zookeeper$1.properties 0<&- &> /tmp/zookeeper.log &
 sleep 2
